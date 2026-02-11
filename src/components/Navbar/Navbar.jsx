@@ -5,8 +5,8 @@ import { FaSearch } from "react-icons/fa";
 
 const Navbar = () => {
     return (
-        <header className="bg-white">
-            <nav className="max-w-[1400px] mx-auto h-[14vh] px-10 flex justify-between items-center">
+        <header className="bg-white fixed top-0 left-0 right-0">
+            <nav className="max-w-[1400px] mx-auto px-10 h-[14vh] flex justify-between items-center">
 
                 {/* Logo */}
                 <a href="#" className="text-3xl font-bold">Ungal <span className="text-green-600 uppercase">Uzhavan</span> Stores</a>
