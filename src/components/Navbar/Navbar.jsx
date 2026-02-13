@@ -51,7 +51,7 @@ const Navbar = () => {
                     </a>
                 </div>
 
-                {/* Mobile Menu */}
+                {/* Mobile Menu Option */}
                 <ul className={`flex  flex-col gap-y-11 p-10 items-center md:hidden absolute top-30 -left-full transform -translate-x-1/2 bg-green-600/15 backdrop-blur-lg rounded-xl transition-all duration-500 ${showMenu ? "left-1/2" : "-translate-x-full"}`}>
                     <li><a href="#" className="font-semibold tracking-wider text-zinc-800 hover:text-green-600 transition-colors">Home</a></li>
                     <li><a href="#" className="font-semibold tracking-wider text-zinc-800 hover:text-green-600 transition-colors">About</a></li>
