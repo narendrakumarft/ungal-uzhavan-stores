@@ -20,7 +20,7 @@ const Navbar = () => {
                 {/* Logo */}
                 <a href="#" className="text-3xl font-bold">Ungal <span className="text-green-600 uppercase">Uzhavan</span></a>
 
-                {/* Desktop Menu */}
+                {/* Desktop Menu Option */}
                 <ul className="md:flex gap-x-10 items-center hidden">
                     <li><a href="#" className="font-semibold tracking-wider text-zinc-800 hover:text-green-600 transition-colors">Home</a></li>
                     <li><a href="#" className="font-semibold tracking-wider text-zinc-800 hover:text-green-600 transition-colors">About</a></li>
