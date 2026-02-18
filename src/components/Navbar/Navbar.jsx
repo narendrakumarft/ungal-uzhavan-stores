@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaHeart } from "react-icons/fa6";
 import { RiShoppingBag4Fill } from "react-icons/ri";
 import { FaSearch } from "react-icons/fa";
@@ -8,13 +8,28 @@ import { MdMenuOpen } from "react-icons/md";
 const Navbar = () => {
 
     const [showMenu, setShowMenu] = React.useState(false);
+    const [scrolled, setScrolled] = React.useState(false);
 
     const toggleMenu = () => {
         setShowMenu(!showMenu);
     };
 
+    useEffect(() => {
+
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 0);
+        }
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        }
+
+    },[])
+
     return (
-        <header className="bg-white fixed top-0 left-0 right-0">
+        <header className={`bg-white fixed top-0 left-0 right-0 z-50 ${scrolled ? "drop-shadow-[0_4px_25px_rgba(0,0,0,0.1)]" : ""}`}>
             <nav className="max-w-[1400px] mx-auto px-10 md:h-[14vh] h-[12vh] flex justify-between items-center">
 
                 {/* Logo */}

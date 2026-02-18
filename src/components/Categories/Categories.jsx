@@ -11,7 +11,7 @@ const Categories = () => {
         return (
 
             // Card 
-            <div className='flex-1'>
+            <div className='flex-1 basis-[30px]' key={card.id}>
 
                 {/* Card Image */}
                 <div className='w-full min-h-[30vh] relative -mb-10'>
@@ -34,7 +34,7 @@ const Categories = () => {
                 <Heading title={"Shop"} subtitle={"by Categories"} />
 
                 {/* Categories Cards */}
-                <div className='flex gap-10 mt-15'>
+                <div className='flex flex-wrap gap-10 mt-15'>
                     {renderCards}
                 </div>
 
