@@ -5,7 +5,7 @@ import Button from '../Button/Button'
 const Cards = () => {
     return (
         <div>
-            {/* Card Actionsb */}
+            {/* Card Action */}
             <div>
                 <span>
                     <FaHeart />
